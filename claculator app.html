@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student marks sheet</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="inputcontainer">
+  <div>
+    <input type="text" placeholder="" class="inputcontainervalue" id="input" disabled>
+  
+  </div>
+  <div class="optioncontainer">
+  <table>
+   <tr> 
+    <td onclick="addnumber('+')">+</td>
+    <td onclick="addnumber('-')">-</td>
+    <td onclick="addnumber('*')">*</td>
+    <td onclick="addnumber('/')">/</td>
+   </tr>
+   <tr>
+    <td onclick="addnumber(7)">7</td>
+    <td onclick="addnumber(8)">8</td>
+    <td onclick="addnumber(9)">9</td>
+    <td onclick="calcans()" colspan="3">=</td>
+   </tr>
+    <tr>
+      <td onclick="addnumber(4)">4</td>
+      <td onclick="addnumber(5)">5</td>
+      <td onclick="addnumber(6)">6</td>
+      
+    </tr>
+    <tr>
+      <td onclick="addnumber(3)">3</td>
+      <td onclick="addnumber(2)">2</td>
+      <td onclick="addnumber(1)">1</td>
+     
+    </tr>
+    <tr>
+      <td onclick="addnumber('+')">0</td>
+      <td onclick="addnumber('+')">.</td>
+      <td onclick="clearvalue()" id="clear">C </td>
+      <td onclick="allclear()">AC</td>
+    </tr>
+  </table>
+  </div>
+
+ </div>
+<script src="app.js"></script>
+</body>
+
+</html>
